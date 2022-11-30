@@ -1,0 +1,20 @@
+<button
+  mat-icon-button
+  aria-label="Icon for change language"
+  [cdkMenuTriggerFor]="languageMenu"
+  matTooltip="Cambiar idioma"
+  class="transition ease-in-out hover:scale-110 hover:text-malibu-300 duration-200 hover:mix-blend-overlay"
+  (cdkMenuOpened)="languageMenuOpened = true"
+>
+  <span class="text-sm"> {{ selectedLanguage }} </span>
+  <i
+    class="las la-xs"
+    [ngClass]="languageMenuOpened ? 'la-angle-down' : 'la-angle-right'"
+  ></i>
+</button>
+<ng-template #languageMenu>
+  <div class="flex flex-col bg-malibu-300 p-3 rounded text-malibu-700" cdkMenu (closed)="languageMenuOpened = !languageMenuOpened">
+    <button class="example-menu-item" cdkMenuItem (click)="changeLanguage('spanish')">Español</button>
+    <button class="example-menu-item" cdkMenuItem (click)="changeLanguage('english')">English</button>
+  </div>
+</ng-template>
