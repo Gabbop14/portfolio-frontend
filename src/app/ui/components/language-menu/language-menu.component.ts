@@ -11,7 +11,7 @@ import {CdkMenuModule} from '@angular/cdk/menu';
 export class LanguageMenuComponent {
 
   languageMenuOpened = false;
-  selectedLanguage = 'Español';
+  selectedLanguage = 'English';
 
   changeLanguage(id: string): void {
     const languages: any = {

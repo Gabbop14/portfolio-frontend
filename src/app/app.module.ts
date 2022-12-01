@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToolbarComponent
+    ToolbarComponent,
+    AboutMeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
