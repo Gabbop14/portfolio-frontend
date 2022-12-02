@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
+import { ExperienceComponent } from './sections/experience/experience.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ToolbarComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ExperienceComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
