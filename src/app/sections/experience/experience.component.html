@@ -1,5 +1,28 @@
 <div class="w-full ring-1 ring-gray-200 shadow rounded p-4">
  
-    <h3 class="text-xl font-bold text-malibu-900 mt-2 cursor-default"> Experience </h3>
+    <h3 class="text-xl font-bold text-malibu-900 mt-2 mb-6 cursor-default"> Experience </h3>
+
+
+    <ng-container *ngFor="let experience of [1,1,1,1,1,1];let last = last">
+        <div class="grid grid-cols-12 gap-y-4 my-3">
+            <div class="flex justify-center">
+                <img src="https://picsum.photos/200" alt="company picture" class="w-12 h-12 rounded">
+            </div>
+    
+            <div class="col-span-11">
+                <h4 class="font-medium text-gray-700"> Full Stack Developer </h4>
+                <h5 class="font-light text-sm text-gray-700"> Inter-neg • Full-time </h5>
+                <small class="font-extralight text-gray-500"> Mar 2022 - Present • 10 months </small>
+                <br/>
+                <small class="font-extralight text-gray-500"> Rosario, Santa Fe - Argentina </small>
+    
+                <p class="text-sm mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nulla facilis dignissimos illum quasi eius ipsam sed! Deleniti unde, quo, aperiam repudiandae rem consequuntur quidem neque molestias similique iste dolor.
+                </p>
+            </div>
+    
+        </div>
+        <hr class="w-full" *ngIf="!last" />
+    </ng-container>
 
 </div>
