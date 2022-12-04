@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
+import { ProjectsComponent } from './sections/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
     ToolbarComponent,
     AboutMeComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
