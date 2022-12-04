@@ -2,8 +2,7 @@
  
     <h3 class="text-xl font-bold text-malibu-900 mt-2 mb-6 cursor-default"> Experience </h3>
 
-
-    <ng-container *ngFor="let experience of [1,1,1,1,1,1];let last = last">
+    <ng-container *ngFor="let experience of [1,1];let last = last">
         <div class="grid grid-cols-12 gap-y-4 my-3">
             <div class="flex justify-center">
                 <img src="https://picsum.photos/200" alt="company picture" class="w-12 h-12 rounded">
@@ -20,7 +19,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nulla facilis dignissimos illum quasi eius ipsam sed! Deleniti unde, quo, aperiam repudiandae rem consequuntur quidem neque molestias similique iste dolor.
                 </p>
             </div>
-    
+
         </div>
         <hr class="w-full" *ngIf="!last" />
     </ng-container>

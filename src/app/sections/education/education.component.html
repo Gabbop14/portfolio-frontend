@@ -1,0 +1,32 @@
+<div class="w-full ring-1 ring-gray-200 shadow rounded p-4">
+  <h3 class="text-xl font-bold text-malibu-900 mt-2 mb-6 cursor-default">
+    Education
+  </h3>
+
+  <ng-container *ngFor="let education of [1]; let last = last">
+    <div class="grid grid-cols-12 gap-y-4 my-3">
+      <div class="flex justify-center">
+        <img
+          src="https://picsum.photos/200"
+          alt="company picture"
+          class="w-12 h-12 rounded"
+        />
+      </div>
+
+      <div class="col-span-11">
+        <h4 class="font-medium text-gray-700">Educacion IT</h4>
+        <h5 class="font-light text-sm text-gray-700">
+          Software Tester QA •
+          <small class="font-extralight text-gray-500"> Completed </small>
+        </h5>
+        <a
+          href="#"
+          class="see-certification-link"
+        >
+          See certification
+        </a>
+      </div>
+    </div>
+    <hr class="w-full" *ngIf="!last" />
+  </ng-container>
+</div>

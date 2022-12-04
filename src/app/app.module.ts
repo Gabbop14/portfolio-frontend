@@ -1,3 +1,4 @@
+import { EducationComponent } from './sections/education/education.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,8 @@ import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
     BrowserAnimationsModule,
     ToolbarComponent,
     AboutMeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
