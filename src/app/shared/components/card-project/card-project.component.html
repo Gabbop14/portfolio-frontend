@@ -1,0 +1,37 @@
+<div class="card-project">
+    <img
+      src="https://picsum.photos/1280"
+      alt="Project image"
+      class="card-image"
+    />
+
+    <div class="card-extra-buttons">
+        <i [matTooltip]="'Hide text'" matTooltipPosition="above" (click)="hideText()" class="las la-comment-slash text-white cursor-pointer"></i>
+    </div>
+
+    <div class="card-icons">
+      <img
+        src="assets/logos/angular.svg"
+        alt="Technology icon"
+        [matTooltip]="'Ir al sitio del lenguaje'"
+        matTooltipPosition="above"
+        (click)="anchorLanguageSite.click()"
+        class="card-icon"
+      />
+      <a #anchorLanguageSite hidden href="https://angular.io/" target="_blank"></a>
+    </div>
+
+    <div #cardContent class="card-content">
+      <p class="font-bold mb-2 md:text-2xl">Panel administrativo</p>
+      <span class="font-extralight">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+        neque necessitatibus voluptatibus, in consequuntur, ipsam, nesciunt
+        incidunt dolor natus fuga rerum. Eius nihil distinctio, ullam porro
+        laudantium sed autem quidem.
+      </span>
+      <div class="w-full flex justify-center mt-2">
+        <button (click)="anchorProjectSite.click()" class="view-proyect-button"> {{ 'Ver proyecto' }} </button>
+        <a #anchorProjectSite hidden href="#" target="_blank"></a>
+      </div>
+    </div>
+  </div>
