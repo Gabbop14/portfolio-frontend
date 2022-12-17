@@ -1,9 +1,9 @@
 .card-project {
-    @apply relative w-full h-80 rounded shadow ring-1 ring-slate-200 hover:shadow-md hover:ring-slate-300;
+    @apply relative w-full h-80 rounded shadow hover:shadow-md hover:ring-slate-300;
   }
   
   .card-image {
-    @apply w-full h-full rounded shadow ring-1 ring-slate-200;
+    @apply w-full h-full rounded shadow;
   }
   
   .card-content {

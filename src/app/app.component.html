@@ -1,20 +1,24 @@
-<toolbar></toolbar>
+<toolbar class="fade-in"></toolbar>
 
-<main class="grid grid-cols-12 grid-flow-col gap-10 px-8">
-    
-    <section class="col-span-6 my-6">
-        <div class="grid grid-cols-1 gap-6">
-            <about-me></about-me>
-            <experience></experience>
-            <education></education>
+<main class="grid grid-cols-12 grid-flow-col gap-10 px-8 fade-in">
+  <section class="col-span-6 my-6">
+    <div class="grid grid-cols-1 gap-6">
+      <about-me></about-me>
+      <experience></experience>
+      <education></education>
+    </div>
+  </section>
+
+  <section class="h-[90vh] col-span-6 my-6 card-ring shadow rounded p-4">
+    <div class="h-full w-full flex flex-col">
+        <h3
+          class="text-xl font-bold text-sky-500 mb-4 cursor-default"
+        >
+          Projects
+        </h3>
+        <div class="w-full overflow-y-auto p-2">
+            <projects></projects>
         </div>
-
-    </section>
-    
-    <section class="col-span-6 my-6 ring-1 ring-slate-200 shadow rounded p-4">
-        <projects></projects>
-    </section>
-
+    </div>
+</section>
 </main>
-
-

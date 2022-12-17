@@ -1,28 +1,76 @@
-<mat-toolbar class="bg-gradient-to-b from-sky-400 to-sky-600 text-white">
-    <div class="w-[150px] h-[113px] object-contain relative">
-        <img ngSrc="assets/images/logo-arg.webp" fill priority/>
-    </div>    
-  <span class="flex-auto"></span>
- <language-menu></language-menu>
-  <button
-    aria-label="Icon for Instagram"
-    matTooltip="Ir a Instagram"
-    class="transition ease-in-out hover:scale-110 hover:text-sky-300 duration-200 hover:mix-blend-overlay"
-  >
-    <i class="lab la-instagram la-2x"></i>
-  </button>
-  <button
-    aria-label="Icon for LinkedIn"
-    matTooltip="Ir a LinkedIn"
-    class="transition ease-in-out hover:scale-110 hover:text-sky-300 duration-200 hover:mix-blend-overlay"
-  >
-    <i class="lab la-linkedin la-2x"></i>
-  </button>
-  <button
-    aria-label="Icon for login"
-    matTooltip="Ingresar"
-    class="transition ease-in-out hover:scale-110 hover:text-sky-300 duration-200 hover:mix-blend-overlay"
-  >
-  <i class="las la-user-circle la-2x"></i>
-  </button>
-</mat-toolbar>
+<div
+  class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors ring-1 ring-slate-100 duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:ring-0 bg-white supports-[backdrop-blur]:bg-white/95 dark:bg-slate-900/75"
+>
+  <div class="max-w-8xl mx-auto">
+    <div
+      class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0"
+    >
+      <div class="relative flex items-center">
+        <a
+          class="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto group"
+          href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+          target="_blank"
+        >
+          <span
+            class="flex items-center font-bold group-hover:text-sky-500 transition-colors ease-in-out duration-300"
+          >
+            <div
+              class="w-10 h-8 mr-1 rounded bg-black text-white text-center group-hover:text-sky-500 transition-colors ease-in-out duration-300"
+            >
+              >_
+            </div>
+            Argentina programa
+          </span>
+        </a>
+        <div class="relative hidden lg:flex items-center ml-auto">
+          <nav class="text-sm text-slate-700 dark:text-slate-200">
+            <ul class="flex items-center space-x-8">
+              <li>
+                <language-menu></language-menu>
+              </li>
+              <li>
+                <button
+                  aria-label="Icon for Instagram"
+                  matTooltip="Ir a Instagram"
+                  class="hover:text-sky-500 dark:hover:text-sky-400"
+                >
+                  <i class="lab la-instagram la-2x"></i>
+                </button>
+                <button
+                  aria-label="Icon for LinkedIn"
+                  matTooltip="Ir a LinkedIn"
+                  class="hover:text-sky-500 dark:hover:text-sky-400"
+                >
+                  <i class="lab la-linkedin la-2x"></i>
+                </button>
+                <button
+                  aria-label="Icon for login"
+                  matTooltip="Ingresar"
+                  class="hover:text-sky-500 dark:hover:text-sky-400"
+                >
+                  <i class="las la-user-circle la-2x"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="flex ml-6 pl-6 items-center text-sm font-semibold text-slate-700 dark:text-slate-200 border-l border-slate-200 dark:border-slate-800"
+          >
+            <theme-selector></theme-selector>
+          </div>
+        </div>
+        <!-- <button
+          aria-label="Icon for LinkedIn"
+          matTooltip="Ir a LinkedIn"
+          class=""
+        >
+          <i class="lab la-linkedin la-2x"></i>
+        </button>
+        <button aria-label="Icon for login" matTooltip="Ingresar" class="">
+          <i class="las la-user-circle la-2x"></i>
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>

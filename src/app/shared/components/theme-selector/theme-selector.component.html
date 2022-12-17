@@ -1,0 +1,46 @@
+<button
+  type="button"
+  aria-label="Change theme"
+  [cdkMenuTriggerFor]="themeMenu"
+  matTooltip="Cambiar tema"
+  (cdkMenuOpened)="themeMenuOpened = true"
+  class="text-sky-500 dark:text-sky-400"
+>
+  <i class="la-2x las" [ngClass]="'la-' + iconTheme"></i>
+</button>
+
+<ng-template #themeMenu>
+  <div
+    class="overlay-menu-wrap dark-highlight"
+    cdkMenu
+    (closed)="themeMenuOpened = !themeMenuOpened"
+  >
+    <button
+      cdkMenuItem
+      (click)="selectTheme('light')"
+      class="w-full flex items-center px-1 hover:bg-slate-100 dark:hover:bg-slate-700 fade-in"
+      [ngClass]="iconTheme === 'sun' ? 'text-sky-500' : ''"
+    >
+      <i class="las la-sun mr-2 text-xl"></i>
+      Light
+    </button>
+    <button
+      cdkMenuItem
+      (click)="selectTheme('dark')"
+      class="w-full flex items-center px-1 hover:bg-slate-100 dark:hover:bg-slate-700 fade-in"
+      [ngClass]="iconTheme === 'moon' ? 'text-sky-500' : ''"
+    >
+      <i class="las la-moon mr-2 text-xl"></i>
+      Dark
+    </button>
+    <button
+      cdkMenuItem
+      (click)="selectTheme('system')"
+      class="w-full flex items-center px-1 hover:bg-slate-100 dark:hover:bg-slate-700 fade-in"
+      [ngClass]="iconTheme === 'desktop' ? 'text-sky-500' : ''"
+    >
+      <i class="las la-desktop mr-2 text-xl"></i>
+      System
+    </button>
+  </div>
+</ng-template>

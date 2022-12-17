@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+    width: 0.40rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply rounded-full bg-slate-200 dark:bg-slate-800;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-sky-500;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply dark:hover:bg-sky-600
+    }
