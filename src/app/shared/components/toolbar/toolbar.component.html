@@ -29,27 +29,7 @@
                 <language-menu></language-menu>
               </li>
               <li>
-                <button
-                  aria-label="Icon for Instagram"
-                  matTooltip="Ir a Instagram"
-                  class="hover:text-sky-500 dark:hover:text-sky-400"
-                >
-                  <i class="lab la-instagram la-2x"></i>
-                </button>
-                <button
-                  aria-label="Icon for LinkedIn"
-                  matTooltip="Ir a LinkedIn"
-                  class="hover:text-sky-500 dark:hover:text-sky-400"
-                >
-                  <i class="lab la-linkedin la-2x"></i>
-                </button>
-                <button
-                  aria-label="Icon for login"
-                  matTooltip="Ingresar"
-                  class="hover:text-sky-500 dark:hover:text-sky-400"
-                >
-                  <i class="las la-user-circle la-2x"></i>
-                </button>
+                <social-button *ngFor="let btn of socialButtons" [config]="btn" ></social-button>
               </li>
             </ul>
           </nav>
