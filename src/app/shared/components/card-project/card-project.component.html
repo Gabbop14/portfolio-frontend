@@ -6,14 +6,14 @@
     />
 
     <div class="card-extra-buttons">
-        <i [matTooltip]="'Hide text'" matTooltipPosition="above" (click)="hideText()" class="las la-comment-slash text-white cursor-pointer"></i>
+        <i [matTooltip]="(hiddenText ? 'ux.show-text' : 'ux.hide-text') | translate" matTooltipPosition="above" (click)="hideText()" class="las text-white cursor-pointer" [ngClass]="hiddenText ? 'la-comment' : 'la-comment-slash'"></i>
     </div>
 
     <div class="card-icons">
       <img
         src="assets/logos/angular.svg"
         alt="Technology icon"
-        [matTooltip]="'Ir al sitio del lenguaje'"
+        [matTooltip]="'ux.go-language-site' | translate"
         matTooltipPosition="above"
         (click)="anchorLanguageSite.click()"
         class="card-icon"
@@ -30,7 +30,7 @@
         laudantium sed autem quidem.
       </span>
       <div class="w-full flex justify-center mt-2">
-        <button (click)="anchorProjectSite.click()" class="view-proyect-button"> {{ 'Ver proyecto' }} </button>
+        <button (click)="anchorProjectSite.click()" class="view-proyect-button"> {{ 'section.projects.view-proyect-button-label' | translate }} </button>
         <a #anchorProjectSite hidden href="#" target="_blank"></a>
       </div>
     </div>

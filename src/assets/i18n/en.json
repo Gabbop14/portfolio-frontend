@@ -1,0 +1,30 @@
+{
+  "langSelect": {
+    "label": "Select language"
+  },
+  "section": {
+    "experience": {
+      "title": "Experience"
+    },
+    "education": {
+      "title": "Education",
+      "complete-learning": "Completed",
+      "see-certification": "See certification"
+    },
+    "projects": {
+      "title": "Projects",
+      "view-proyect-button-label": "View project"
+    },
+    "about-me": {
+      "current-position": "Current position",
+      "current-company": "Current company",
+      "current-address": "Current address"
+    }
+  },
+  "ux": {
+    "hide-text": "Hide text",
+    "show-text": "Show text",
+    "go-language-site": "Go to the official site",
+    "social-button": "Go to {{ tooltipLabel }}"
+  }
+}

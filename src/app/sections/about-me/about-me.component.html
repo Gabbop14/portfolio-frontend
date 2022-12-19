@@ -21,14 +21,14 @@
     <div class="grid grid-cols-2 justify-between w-full">
       <h3
         class="text-lg font-semibold text-sky-800 dark:text-slate-300 w-fit cursor-help"
-        matTooltip="Current position"
+        [matTooltip]="'section.about-me.current-position' | translate"
         matTooltipPosition="right"
       >
         Front-end Lead at Inter-neg
       </h3>
 
       <div class="flex justify-end items-center">
-        <div matTooltip="Current company" matTooltipPosition="left" class="cursor-help flex justify-end items-center">
+        <div [matTooltip]="'section.about-me.current-company' | translate" matTooltipPosition="left" class="cursor-help flex justify-end items-center">
           <img src="assets/images/logo-interneg.webp" alt="Logo Interneg" height="30px" width="30px" />
           <h3 class="text-end font-medium text-sky-800 dark:text-sky-700">
             Inter-neg
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <small class="text-slate-800 dark:text-slate-400 text-xs font-medium cursor-help" matTooltip="Current address" matTooltipPosition="right">Rosario - Santa Fe, Argentine.</small>
+    <small class="text-slate-800 dark:text-slate-400 text-xs font-medium cursor-help" [matTooltip]="'section.about-me.current-address' | translate" matTooltipPosition="right">Rosario - Santa Fe, Argentine.</small>
 
     <p class="text-slate-700 dark:text-slate-300"> I'm an engineer front-end developer with expertise in Angular with it's latest versions and ngrx/store. I enjoy what i do and sharing what i know others in same way. I also like to share my discoveries with my friends and on social media, have a lot of experience in develop applications from scratch and optimize applications that have already been developed, also have experience in back-end and mobile development with some technologies and deployment. </p>
   </div>

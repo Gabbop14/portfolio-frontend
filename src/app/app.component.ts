@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Language, Languages } from './shared/models/languages';
+import { LanguageService } from './shared/services/language.service';
 import { Theme, ThemeService } from './shared/services/theme.service';
 
 @Component({
@@ -12,7 +14,7 @@ export class AppComponent implements OnInit{
   userTheme = localStorage.getItem('theme');
   systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  constructor(private themeService: ThemeService){}
+  constructor(private themeService: ThemeService, private languageService: LanguageService){}
   
   protected themeCheck(): void{
     if(this.userTheme === 'dark'){
@@ -23,8 +25,19 @@ export class AppComponent implements OnInit{
     this.themeService.selectTheme(Theme.LIGHT);
   }
 
+  protected langCheck(): void{
+    const storageLang = localStorage.getItem('lang');
+    if(storageLang){
+      const storageLangObj: Language = JSON.parse( storageLang );
+      this.languageService.selectLanguage(storageLangObj);
+      return;
+    }
+    this.languageService.selectLanguage(Languages[0]);
+  }
+
   ngOnInit(): void {
     this.themeCheck();
+    this.langCheck();
   }
 
 }
