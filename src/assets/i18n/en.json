@@ -19,12 +19,21 @@
       "current-position": "Current position",
       "current-company": "Current company",
       "current-address": "Current address"
+    },
+    "login": {
+      "username-input-label": "Username",
+      "username-input-placeholder": "Write your username",
+      "password-input-label": "Password",
+      "password-input-placeholder": "Write your password"
     }
   },
   "ux": {
     "hide-text": "Hide text",
     "show-text": "Show text",
     "go-language-site": "Go to the official site",
-    "social-button": "Go to {{ tooltipLabel }}"
+    "social-button": "Go to {{ tooltipLabel }}",
+    "login-button-label": "Sign in",
+    "cancel-button": "Cancel",
+    "sign-in-button": "Sign in"
   }
 }

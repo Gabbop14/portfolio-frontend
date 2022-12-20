@@ -19,12 +19,21 @@
       "current-position": "Puesto actual",
       "current-company": "Compañia actual",
       "current-address": "Dirección actual"
+    },
+    "login": {
+      "username-input-label": "Usuario",
+      "username-input-placeholder": "Ingrese su usuario",
+      "password-input-label": "Contraseña",
+      "password-input-placeholder": "Ingrese su contraseña"
     }
   },
   "ux": {
     "hide-text": "Ocultar texto",
     "show-text": "Mostrar texto",
     "go-language-site": "Ir al sitio oficial",
-    "social-button": "Ir a {{ tooltipLabel }}"
+    "social-button": "Ir a {{ tooltipLabel }}",
+    "login-button-label": "Iniciar sesión",
+    "cancel-button": "Cancelar",
+    "sign-in-button": "Ingresar"
   }
 }
