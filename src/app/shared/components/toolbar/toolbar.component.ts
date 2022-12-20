@@ -3,13 +3,14 @@ import { Component } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SocialButtonConfig } from '../../models/social-button';
 import { LanguageMenuComponent } from '../language-menu/language-menu.component';
+import { LoginButtonComponent } from '../login-button/login-button.component';
 import { SocialButtonComponent } from '../social-button/social-button.component';
 import { ThemeSelectorComponent } from '../theme-selector/theme-selector.component';
 
 @Component({
   selector: 'toolbar',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, MatTooltipModule, LanguageMenuComponent, ThemeSelectorComponent, SocialButtonComponent],
+  imports: [CommonModule, NgOptimizedImage, MatTooltipModule, LanguageMenuComponent, ThemeSelectorComponent, SocialButtonComponent, LoginButtonComponent],
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })

@@ -1,7 +1,7 @@
 <button
 [matTooltip]="'ux.social-button' | translate: { tooltipLabel: config.tooltipLabel }"
 (click)="anchorSite.click()"
-class="hover:text-sky-500 dark:hover:text-sky-400"
+class="hover:text-sky-500 dark:hover:text-sky-400 transition-colors ease-in-out duration-300"
 >
 <a #anchorSite hidden [href]="config.link" target="_blank"></a>
 <i class="la-2x" [ngClass]="config.icon"></i>
