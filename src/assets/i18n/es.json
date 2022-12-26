@@ -25,6 +25,12 @@
       "username-input-placeholder": "Ingrese su usuario",
       "password-input-label": "Contraseña",
       "password-input-placeholder": "Ingrese su contraseña"
+    },
+    "hard-skills": {
+      "title": "Hard Skills"
+    },
+    "soft-skills": {
+      "title": "Soft Skills"
     }
   },
   "ux": {

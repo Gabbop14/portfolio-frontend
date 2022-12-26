@@ -25,6 +25,12 @@
       "username-input-placeholder": "Write your username",
       "password-input-label": "Password",
       "password-input-placeholder": "Write your password"
+    },
+    "hard-skills": {
+      "title": "Hard Skills"
+    },
+    "soft-skills": {
+      "title": "Soft Skills"
     }
   },
   "ux": {
