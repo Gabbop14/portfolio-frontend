@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillsComponentModeEnum } from './sections/skills/skills.component';
 import { Language, Languages } from './shared/models/languages';
 import { LanguageService } from './shared/services/language.service';
 import { Theme, ThemeService } from './shared/services/theme.service';
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit{
   selectDocument = document.documentElement;
   userTheme = localStorage.getItem('theme');
   systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  SkillsComponentMode = SkillsComponentModeEnum;
 
   constructor(private themeService: ThemeService, private languageService: LanguageService){}
   

@@ -1,24 +1,24 @@
 <toolbar class="fade-in sticky z-50"></toolbar>
 
-<main class="grid grid-cols-12 grid-flow-col gap-10 px-8 fade-in relative z-0">
-  <section class="col-span-6 my-6">
+<main class="grid grid-cols-2 gap-10 px-8 fade-in relative z-0">
+  <div class="my-6">
     <div class="grid grid-cols-1 gap-6">
       <about-me></about-me>
       <experience></experience>
       <education></education>
+      <skills [mode]="SkillsComponentMode.Hard"></skills>
+      <skills [mode]="SkillsComponentMode.Soft"></skills>
     </div>
-  </section>
+  </div>
 
-  <section class="h-[90vh] col-span-6 my-6 card-ring dark:bg-slate-800 shadow rounded p-4">
+  <div class="h-[90vh] card-ring dark:bg-slate-800 shadow rounded p-4 my-6">
     <div class="h-full w-full flex flex-col">
-        <h3
-          class="text-xl font-bold text-sky-500 mb-4 cursor-default"
-        >
-        {{ 'section.projects.title' | translate}}
-        </h3>
-        <div class="w-full overflow-y-auto p-2">
-            <projects></projects>
-        </div>
+      <h3 class="text-xl font-bold text-sky-500 mb-4 cursor-default">
+        {{ "section.projects.title" | translate }}
+      </h3>
+      <div class="w-full overflow-y-auto p-2">
+        <projects></projects>
+      </div>
     </div>
-</section>
+  </div>
 </main>

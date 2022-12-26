@@ -1,3 +1,4 @@
+import { SkillsComponent } from './sections/skills/skills.component';
 import { EducationComponent } from './sections/education/education.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -40,7 +41,8 @@ export function createTranslateLoader(http: HttpClient) {
     AboutMeComponent,
     ExperienceComponent,
     EducationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
