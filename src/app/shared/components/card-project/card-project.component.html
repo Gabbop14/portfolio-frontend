@@ -6,7 +6,7 @@
     />
 
     <div class="card-extra-buttons">
-        <i [matTooltip]="(hiddenText ? 'ux.show-text' : 'ux.hide-text') | translate" matTooltipPosition="above" (click)="hideText()" class="las text-white cursor-pointer" [ngClass]="hiddenText ? 'la-comment' : 'la-comment-slash'"></i>
+        <i [matTooltip]="(hiddenText ? 'ux.show-text' : 'ux.hide-text') | translate" matTooltipPosition="above" (click)="hideText()" class="las text-white cursor-pointer ease-linear animate-pulse duration-300" [ngClass]="hiddenText ? 'la-comment' : 'la-comment-slash'"></i>
     </div>
 
     <div class="card-icons">
@@ -30,7 +30,7 @@
         laudantium sed autem quidem.
       </span>
       <div class="w-full flex justify-center mt-2">
-        <button (click)="anchorProjectSite.click()" class="view-proyect-button"> {{ 'section.projects.view-proyect-button-label' | translate }} </button>
+        <button (click)="anchorProjectSite.click()" class="view-project-button"> {{ 'section.projects.view-proyect-button-label' | translate }} </button>
         <a #anchorProjectSite hidden href="#" target="_blank"></a>
       </div>
     </div>
