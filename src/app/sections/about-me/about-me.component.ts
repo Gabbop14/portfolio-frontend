@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
+import { AboutMe } from 'src/app/shared/models/about-me';
 
 @Component({
   selector: 'about-me',
@@ -10,6 +11,14 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss']
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements OnInit {
+
+  aboutMe?: AboutMe;
+
+  constructor(){}
+
+  ngOnInit(): void {
+    
+  }
 
 }

@@ -3,11 +3,11 @@
   aria-label="Icon for change language"
   [cdkMenuTriggerFor]="languageMenu"
   [matTooltip]="'langSelect.label' | translate"
-  class="font-semibold text-slate-700 dark:text-slate-200 transition-colors ease-in-out duration-200 hover:text-sky-500 dark:hover:text-sky-400"
+  class="font-semibold text-slate-700 dark:text-slate-200"
   (cdkMenuOpened)="languageMenuOpened = true"
 >
   <span
-    class="leading-5 font-semibold bg-slate-400/10 rounded py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark-highlight"
+    class="leading-5 font-semibold rounded flex items-center space-x-2 dark-highlight custom-span-button transition-all ease-in-out duration-300 hover:text-sky-500 dark:hover:text-sky-400"
   >
     {{ (selectedLanguageName$ | async) | titlecase }}
     <i
